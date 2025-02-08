@@ -14,7 +14,47 @@ input[type="checkbox"] {
     width: 20px;
     height: 20px;
 }
+header{
+    height: 4vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
 
+header section{
+    width: 35%;
+    height: 90%;
+}
+
+header section img{
+    width: auto;
+    height: 100%;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul li:hover{
+    text-decoration: underline;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(211, 211, 211, 0.489);
+    display: flex;
+    justify-content: center;
+}
 .result {
     display: flex;
     align-items: center;

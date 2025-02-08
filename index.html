@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Search Abnormalities</title>
+    <link rel="shortcut icon" href="./Icons/favicon.ico" type="image/x-icon">
+    <title>Terabase</title>
 </head>
 <body>
-    <h1>Search Abnormalities</h1>
-    <input type="text" id="searchBar" placeholder="Search for abnormalities...">
-    <input type="checkbox" name="id" id="id"><label for="id"> Search by ID</label>
-    <div id="results"></div>
+    <header>
+        <section>
+            <img src="./assets/img/logoTerabase.png" alt="Logo du site TeraBase">
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Abnormalities</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="dungeon.html">Dungeons</a></li>
+            </ul>
+        </nav>
+    </header>
 
+        <h1>Search Abnormalities</h1>
+        <input type="text" id="searchBar" placeholder="Search for abnormalities...">
+        <input type="checkbox" name="id" id="id"><label for="id"> Search by ID</label>
+        <div id="results"></div>
+    <footer>
+        <p>&copy; 2024 made with &hearts; by TERA-BE-LIKE team, ALL RIGHTS RESERVED (All data from TERA game 2012)</p>
+    </footer>
     <script>
         document.addEventListener('DOMContentLoaded', async () => {
             const searchBar = document.getElementById('searchBar');

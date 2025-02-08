@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="item.css">
     <link rel="icon" href="Icons/favicon.ico" type="image/x-icon">
-    <title>TeraBase - Search Items</title>
+    <title>TeraBase - Items</title>
 </head>
 
 <body id="body">
+        <header>
+            <section>
+                <img src="./assets/img/logoTerabase.png" alt="Logo du site TeraBase">
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#">Abnormalities</a></li>
+                    <li><a href="items.html">Items</a></li>
+                    <li><a href="dungeon.html">Dungeons</a></li>
+                </ul>
+            </nav>
+        </header>
     <h1>Search Items</h1>
     <input type="text" id="searchBar" placeholder="Search for abnormalities...">
     <input type="checkbox" name="id" id="id"><label for="id" checked> Search by ID</label>
@@ -18,7 +30,9 @@
         <div id="loadingSpinner" class="spinner" style="display: none;"></div>
     </div>
     <button id="loadMore" style="display: none;">Load More</button>
-
+    <footer>
+        <p>&copy; 2024 made with &hearts; by TERA-BE-LIKE team, ALL RIGHTS RESERVED (All data from TERA game 2012)</p>
+    </footer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Get references to DOM elements
